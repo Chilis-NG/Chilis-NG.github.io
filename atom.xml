@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>自风の小站</title>
+  
+  <subtitle>Welcome to Maiya&#39;s site</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-03-15T05:36:53.806Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Chilis_NG</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo搭建</title>
+    <link href="http://example.com/post/57ee7c1d.html"/>
+    <id>http://example.com/post/57ee7c1d.html</id>
+    <published>2023-03-14T13:25:32.000Z</published>
+    <updated>2023-03-15T05:36:53.806Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HEXO教程"><a href="#HEXO教程" class="headerlink" title="HEXO教程"></a>HEXO教程</h1><ul><li>之前一直用博客来记录自己的学习收获，舍友突然觉得我这样学习还挺方便的，让我帮忙搭建个博客。但是竟然怎么都想不起来怎么上传Github了。</li><li>今天就顺便记下我是怎么折腾我的Blog的吧。</li></ul><h2 id="hexo上传至Github"><a href="#hexo上传至Github" class="headerlink" title="hexo上传至Github"></a>hexo上传至Github</h2><h3 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h3><p>安装node.js</p><p>安装git环境</p><p>安装hexo</p><ul><li>再次不再过多赘述，可以查看hexo的文档：<a href="https://hexo.io/zh-cn/docs/index.html">文档 | Hexo</a></li></ul><h3 id="新建Github仓库"><a href="#新建Github仓库" class="headerlink" title="新建Github仓库"></a>新建Github仓库</h3><p>1，创建并登录自己的Github，新建个仓库，命名为<code>username.github.io</code>username为你自己的用户名，勾选<strong>Initialiaze this repository with a README</strong></p><p>2,然后就可以访问自己的username.github.io，网站为<a href="https://github.com/username.github.io">https://github.com/username.github.io</a></p><h3 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h3><p>1，在你的电脑中的BLOG根文件夹中找到：**_config.yml**</p><p>2，将最后的deploy改为</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository:</span><br><span class="line">    github: https://github.com/yourname/yourname.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><h3 id="配置公钥"><a href="#配置公钥" class="headerlink" title="配置公钥"></a>配置公钥</h3><p>在控制台运行：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure><p>然后，生成SSH公钥，其中的id_rsa.pub就是公钥</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;yourname@mail.com&quot;</span><br></pre></td></tr></table></figure><p>根据提示，进入ssh的文件夹内，其中的id_rsa.pub就是公钥</p><p>将公钥添加至Settings-Deploy keys-Add new</p><p>名字随便起，key复制文件内容，allow write access  打开</p><p>可以在控制台中，查看是否成功</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;HEXO教程&quot;&gt;&lt;a href=&quot;#HEXO教程&quot; class=&quot;headerlink&quot; title=&quot;HEXO教程&quot;&gt;&lt;/a&gt;HEXO教程&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;之前一直用博客来记录自己的学习收获，舍友突然觉得我这样学习还挺方便的，让我帮忙搭建个博客。但是竟</summary>
+      
+    
+    
+    
+    <category term="Hexo的搭建之旅" scheme="http://example.com/categories/Hexo%E7%9A%84%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>膜电极的研究（1）</title>
+    <link href="http://example.com/post/6a7616d7.html"/>
+    <id>http://example.com/post/6a7616d7.html</id>
+    <published>2023-03-13T14:56:32.000Z</published>
+    <updated>2023-03-14T14:33:33.447Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>膜电极（MEA）是PEMFC的核心部分，其直接绝定了PEMFC性能的好坏。</p><p>MEA主要包括<code>质子交换膜（PEM）</code>、<code>阴极催化层（CaCL）</code>、<code>阳极催化层（AnCL）</code>、<code>阴极气体扩散层（CaGDL)</code>和<code>阳极气体扩散层（AnGDL）</code>。有时又将气体扩散层成为“碳纸”和”微孔层“。</p><p>阴极面临的困难和挑战：1、阴极水管理问题，阴极容易发生水淹现象，水淹会导致阴极催化剂活性降低、堵塞气体扩散孔道。2、氧气还原比较困难，催化剂的利用率比较低。</p><h1 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h1><h2 id="1-1-燃料电池简介"><a href="#1-1-燃料电池简介" class="headerlink" title="1.1 燃料电池简介"></a>1.1 燃料电池简介</h2><p>根据燃料电池的电解质不通过进行分类，可将燃料电池分为：碱性燃料电池（AFC）。磷酸盐型燃料电池（PAFC），熔融碳酸盐型燃料电池（MCFC），固体氧化物型燃料电池。（SOFC）和质子交换膜燃料电池（PEMFC）。</p><h2 id="1-2-质子交换膜燃料电池概况"><a href="#1-2-质子交换膜燃料电池概况" class="headerlink" title="1.2 质子交换膜燃料电池概况"></a>1.2 质子交换膜燃料电池概况</h2><h3 id="1-2-3-质子交换膜燃料电池的反应动力学"><a href="#1-2-3-质子交换膜燃料电池的反应动力学" class="headerlink" title="1.2.3 质子交换膜燃料电池的反应动力学"></a>1.2.3 质子交换膜燃料电池的反应动力学</h3><p>PEMFC工作时，会出现电极电位偏离平衡电位的现象，称之为电极极化。这可以表示为PEMFC由静止尚未工作的状态进入到工作状态的过程中能量损失的多少。如下图</p><p><img src="https://s2.loli.net/2023/03/14/SZVUH48WYJDrawp.png" alt="质子交换膜燃料电池极化曲线示意图.png"></p><p>出现电压下降的主要原因：</p><p>（1）第一部分主要因为电化学极化引起的电压降低，因电极表面的反应动力学过程比较缓慢而导致了电压的降低，电化学极化主要发生在电池的高电压区域，这称之为为<code>活化过电位（ηact）</code>。</p><p>其可以通过：<code>提高电池的温度</code>、<code>电池反应气体的背压</code>、<code>提高反应气体的浓度</code>、<code>使用具有高催化活性的催化剂</code>等方法来促进电化学反应的动力学过程，从而可以减少在高电压区的电化学极化。</p><p>（2）第二部分是欧姆极化导致的电压降低，在PEMFC中，存在有各个组件之间的接触电阻。些原因引起的电压损失称之为<code>欧姆过电位</code>。</p><p>这可以通过：<code>优化 MEA的三项接触界面</code>、<code>采用更薄而又具有高质子传导率的质子交换膜</code>、<code>提高催化层和气体扩散层的导电率</code>以及通过<code>改进 MEA的制备工艺以增强催化层与质子交换膜之间的接触</code>等。 </p><p>（3）第三部分是因为浓差极化导致的电压降低，朱啊哟是因为反应气体扩散慢，不能够及时扩散至催化层中参与反应引起的。这称之为<code>浓差过电位</code>。阳极基本上不存在浓差极化，这是因为阴极工作时会产生水，水要通过气体扩散的孔道排出去。特别是大电流密度区，会产生更多水。</p><p>主要可以通过：<code>增加阴极反应气体的流速和背压来减小</code>，另外也可以通过<code>改变阴极催化层</code>、<code>气体扩散层的亲疏水性</code>来实现及时有效地排出阴极产生的水，从而预防阴极气体扩散孔道被水堵塞。</p><h3 id="1-2-4质子交换膜燃料电池的反应热力学"><a href="#1-2-4质子交换膜燃料电池的反应热力学" class="headerlink" title="1.2.4质子交换膜燃料电池的反应热力学"></a>1.2.4质子交换膜燃料电池的反应热力学</h3><p>对于整个电化学反应过程的吉布斯能和电势的关系可以用以下公式表示：</p><p>ΔG = -nFE </p><p>ΔG是反应的吉布斯自由能变化，E是 PEMFC的电压，n是电化学反应过程中转移的电子数，F为法拉第常数。</p><p>PEMFC不受卡诺循环的限制，所以效率高于普通的卡诺循环效率。理论的PEMFC能量转化效率为：</p><p>η=ΔG / ΔH= 83 % </p><h2 id="1-3-膜电极的研究"><a href="#1-3-膜电极的研究" class="headerlink" title="1.3 膜电极的研究"></a>1.3 膜电极的研究</h2><p>MEA涉及<code>三相界面反应</code>、<code>复杂的传质传热过程</code>，对于促进 PEMFC的商业化，MEA的研究是一个严峻的挑战。</p><p>MEA的结构主要包括<code>阴极气体扩散层（Cathode Gas Diffusion Layer，CaGDL）</code>、<code>阴极催化层（Cathode Catalyst Layer，CaCL）</code>、<code>质子交换膜（Proton Exchange Membrane，PEM）</code>、<code>阳极气体扩散层（Anode Gas Diffusion Layer，AnGD）</code>、<code>阳极催化层（Anode Catalyst Layer，AnCL）</code>，而其中气体扩散层（Gas Diffusion Layer，GDL）又通常包括<code>碳纸（Carbon Paper，CP）</code>/<code>碳布（Carbon Cloth，CC）</code>和负载在其上的<code>微孔层（Microporous Layer，MPL）</code>组合而成。通常将不把 MPL纳入MEA组件的 MEA称之为“五合一”MEA，而将 MPL算入组件的称之为“七合一”MEA</p><p><img src="https://s2.loli.net/2023/03/14/9VWC1kRHIKmzyje.png" alt="膜电极结构示意图.png"></p><p>MEA的研究主要集中在：气体扩散层、催化层、质子交换膜、对MEA制备工艺的研究。</p><h3 id="1-3-1气体扩散层研究状况"><a href="#1-3-1气体扩散层研究状况" class="headerlink" title="1.3.1气体扩散层研究状况"></a>1.3.1气体扩散层研究状况</h3><p>由碳纸或碳布和负载在其上的微孔层构成，主要作用是：<code>扩散气体</code>、<code>传导电子</code>和<code>排出阴极产生的水</code>。</p><p>当双层气体扩散层中的 PTFE（聚四氟乙烯）含量合适时，可以改善阴极的水管理。双层微孔层是：亲水层覆盖在疏水层上，而疏水层是与碳纸相接触的，亲水层能够保存一定的水。</p><h2 id="1-4-我国现状"><a href="#1-4-我国现状" class="headerlink" title="1.4 我国现状"></a>1.4 我国现状</h2><p>主要趋势：</p><p>1、开发和制备高性能高功率密度的质子交换膜燃料电池，保持小体积的PEMFC具有更高的能量。</p><p>2、开发和制备长寿命的质子交换膜燃料电池 MEA。</p><p>3、找新的具有跟 Pt催化活性相媲美的其他非贵金属催化剂或非金属催化剂</p><h1 id="第二章-实验设计和表征"><a href="#第二章-实验设计和表征" class="headerlink" title="第二章 实验设计和表征"></a>第二章 实验设计和表征</h1><h2 id="2-2-膜电极的制备"><a href="#2-2-膜电极的制备" class="headerlink" title="2.2 膜电极的制备"></a>2.2 膜电极的制备</h2><h3 id="2-2-1-质子交换膜预处理"><a href="#2-2-1-质子交换膜预处理" class="headerlink" title="2.2.1 质子交换膜预处理"></a>2.2.1 质子交换膜预处理</h3><p>以Nafion211膜为例，厚度为25μm。</p><p>1，首先，将Nafion裁成4cm×4cm，将 30 wt.%的过氧化氢稀释成 5 wt.%，将膜浸入其中，水浴80°C下放置1小时。</p><p>2，然后，倒掉溶液，在将膜浸泡在0.5 mol L-1的硫酸溶液里面，水浴80°C下放置1小时。</p><p>3，最后，用去离子水多次洗涤，取出表面残渣后，泡在去离子水中备用。</p><h3 id="2-2-2-气体扩散层的制备"><a href="#2-2-2-气体扩散层的制备" class="headerlink" title="2.2.2 气体扩散层的制备"></a>2.2.2 气体扩散层的制备</h3><p>先对碳纸进行预处理</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h1&gt;&lt;p&gt;膜电极（MEA）是PEMFC的核心部分，其直接绝定了PEMFC性能的好坏。&lt;/p&gt;
+&lt;p&gt;MEA主要包括&lt;code&gt;质子交换膜（PEM）&lt;/</summary>
+      
+    
+    
+    
+    <category term="大学大不了自学" scheme="http://example.com/categories/%E5%A4%A7%E5%AD%A6%E5%A4%A7%E4%B8%8D%E4%BA%86%E8%87%AA%E5%AD%A6/"/>
+    
+    <category term="PEMFC" scheme="http://example.com/categories/%E5%A4%A7%E5%AD%A6%E5%A4%A7%E4%B8%8D%E4%BA%86%E8%87%AA%E5%AD%A6/PEMFC/"/>
+    
+    
+    <category term="大学" scheme="http://example.com/tags/%E5%A4%A7%E5%AD%A6/"/>
+    
+    <category term="PEMFC" scheme="http://example.com/tags/PEMFC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flask的使用</title>
+    <link href="http://example.com/post/dce9aed1.html"/>
+    <id>http://example.com/post/dce9aed1.html</id>
+    <published>2023-03-13T07:09:50.000Z</published>
+    <updated>2023-03-14T13:24:50.945Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-1-1-Flask是什么"><a href="#1-1-1-Flask是什么" class="headerlink" title="1.1.1 Flask是什么"></a>1.1.1 Flask是什么</h1><p>flask是种非常容易上手的Python web开发框架，只需具有基本的python开发技能，即可开发出一个web应用来。</p><p>flask的官方文档：<a href="http://flask.pocoo.org/">http://flask.pocoo.org/</a></p><p>flask的中文文档：<a href="http://dormousehole.readthedocs.org/en/latest/">http://dormousehole.readthedocs.org/en/latest/</a></p><p>我们可以先读文档中的《安装》，然后读《快速上手》。Flask有着强大的拓展功能。</p><h2 id="1-1-2-Flask的安装"><a href="#1-1-2-Flask的安装" class="headerlink" title="1.1.2  Flask的安装"></a>1.1.2  Flask的安装</h2><p>在win中，安装非常简单。在文件夹中的命令窗口中直接执行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install flask</span><br></pre></td></tr></table></figure><p>如果最后显示:</p><p><code>Successfully installed flask Werkzeug Jinja2 itsdangerous markupsafe </code></p><p><code>Cleaning up...</code></p><p>表示安装成功。</p><h2 id="1-1-3-Flask实例"><a href="#1-1-3-Flask实例" class="headerlink" title="1.1.3 Flask实例"></a>1.1.3 Flask实例</h2><p>编写以下程序：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">import flask      # 引入一个 flask 程序包，在正确安装flask后都能正常引入。</span><br><span class="line">app=flask.Flask(__name__)      # 初始化一个flask对象，参数__name__是程序的名称</span><br><span class="line"></span><br><span class="line">@app.route(&quot;/&quot;)       # 这是一段路由控制语句，每个路由用“@app.route(...) ”来指明，</span><br><span class="line">def hello():      # 在访问相对地址是“/”时就执行hello（），因此访问http://127.0.0.1:5000/时看到“你好”</span><br><span class="line">return &quot;你好&quot;            </span><br><span class="line"></span><br><span class="line">@app.route(&quot;/hi&quot;)      #在访问地址相对地址是&quot;/hi&quot;时，执行hi()，因此访问http://127.0.0.1:5000/hi 时看到“Hi,你好”。</span><br><span class="line">def hi():</span><br><span class="line">return &quot;Hi,你好&quot;</span><br><span class="line"></span><br><span class="line">if __name__==&quot;__main__&quot;:</span><br><span class="line">app.run()</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>执行程序，可以显示<code>http://127.0.0.1:5000/</code>的web地址，打开则在浏览器中打开显示<code>你好</code></p><p>如果输入<code>http://127.0.0.1:5000/hi</code>，则显示<code>hi，你好</code></p><h2 id="1-1-4显示静态网页"><a href="#1-1-4显示静态网页" class="headerlink" title="1.1.4显示静态网页"></a>1.1.4显示静态网页</h2><p>如果在程序同一文件夹中有一个静态网页，例如 ”index.htm“，那么很容易用flask做一个web网站程序 server.py，它的主页就是index.htm。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import flask</span><br><span class="line"></span><br><span class="line">app=flask.Flask(__name__)</span><br><span class="line"></span><br><span class="line">@app.route(&quot;/&quot;)</span><br><span class="line">def index():</span><br><span class="line">try:</span><br><span class="line">fobj=open(&quot;index.htm&quot;,&quot;rb&quot;)</span><br><span class="line">data=fobj.read()</span><br><span class="line">fobj.close()</span><br><span class="line">return data</span><br><span class="line">except Exception as err:</span><br><span class="line">return str(err)</span><br><span class="line"> </span><br><span class="line">if __name__==&quot;__main__&quot;:</span><br><span class="line">app.run()</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-1-1-Flask是什么&quot;&gt;&lt;a href=&quot;#1-1-1-Flask是什么&quot; class=&quot;headerlink&quot; title=&quot;1.1.1 Flask是什么&quot;&gt;&lt;/a&gt;1.1.1 Flask是什么&lt;/h1&gt;&lt;p&gt;flask是种非常容易上手的Python w</summary>
+      
+    
+    
+    
+    <category term="Python_Study" scheme="http://example.com/categories/Python-Study/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="爬虫" scheme="http://example.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>虚幻4：从入门到入坟</title>
+    <link href="http://example.com/post/19686.html"/>
+    <id>http://example.com/post/19686.html</id>
+    <published>2022-11-06T06:30:21.000Z</published>
+    <updated>2023-03-13T14:58:14.662Z</updated>
+    
+    
+    
+    
+    <category term="虚幻4：从入门到入坟" scheme="http://example.com/categories/%E8%99%9A%E5%B9%BB4%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9D%9F/"/>
+    
+    
+    <category term="虚幻4" scheme="http://example.com/tags/%E8%99%9A%E5%B9%BB4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo搭建：美化我的BOLG</title>
+    <link href="http://example.com/post/13313.html"/>
+    <id>http://example.com/post/13313.html</id>
+    <published>2022-11-01T08:24:59.000Z</published>
+    <updated>2023-03-13T14:57:34.133Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="魔改要加速了"><a href="#魔改要加速了" class="headerlink" title="魔改要加速了"></a>魔改要加速了</h1><hr><h2 id="给音乐界面添加Aplayer"><a href="#给音乐界面添加Aplayer" class="headerlink" title="给音乐界面添加Aplayer"></a>给音乐界面添加Aplayer</h2><p>终于搞定了，我发现网上虽然教程不少，但是面向小白的真的聊胜于无了，捣鼓了半天终于自己摸索懂了。以下是我的一些操作流程。</p><h3 id="添加Aplayer"><a href="#添加Aplayer" class="headerlink" title="添加Aplayer"></a>添加Aplayer</h3><p>1，根目录运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new page music</span><br><span class="line"></span><br><span class="line">npm install aplayer</span><br><span class="line"></span><br><span class="line">npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure><p>2，在 博客根目录\source\music\index.md使用以下格式</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 我的歌单</span><br><span class="line">date: 2022-10-31 18:45:36</span><br><span class="line">type: &quot;music&quot;</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;font color=#0c74d6 size=3 face=&quot;黑体&quot;&gt;**我比较喜欢的一些轻音乐**&lt;/font&gt; &#123;% meting &quot;7714811335&quot; &quot;netease&quot; &quot;playlist&quot; &quot;theme:#3F51B5&quot; &quot;mutex:true&quot; &quot;preload:auto&quot; %&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>对<code> &#123;% meting "7714811335" "netease" "playlist" "theme:#3F51B5" "mutex:true" "preload:auto" %&#125;</code>其中的一些元素进行说明</p><table><thead><tr><th>选项</th><th>默认值</th><th>描述</th></tr></thead><tbody><tr><td>id</td><td><strong>必须值</strong></td><td>歌曲 id / 播放列表 id / 相册 id / 搜索关键字</td></tr><tr><td>server</td><td><strong>必须值</strong></td><td>音乐平台: <code>netease</code>, <code>tencent</code>, <code>kugou</code>, <code>xiami</code>, <code>baidu</code></td></tr><tr><td>type</td><td><strong>必须值</strong></td><td>song<code>, </code>playlist<code>, </code>album<code>, </code>search<code>, </code>artist</td></tr><tr><td>fixed</td><td>false</td><td>开启固定模式</td></tr><tr><td>mini</td><td>false</td><td>开启迷你模式</td></tr><tr><td>loop</td><td>all</td><td>列表循环模式：<code>all</code>, <code>one</code>,<code>none</code></td></tr><tr><td>order</td><td>list</td><td>列表播放模式： <code>list</code>, <code>random</code></td></tr><tr><td>volume</td><td>0.7</td><td>播放器音量</td></tr><tr><td>lrctype</td><td>0</td><td>歌词格式类型</td></tr><tr><td>listfolded</td><td>false</td><td>指定音乐播放列表是否折叠</td></tr><tr><td>storagename</td><td>metingjs</td><td>LocalStorage 中存储播放器设定的键名</td></tr><tr><td>autoplay</td><td>true</td><td>自动播放，移动端浏览器暂时不支持此功能</td></tr><tr><td>mutex</td><td>true</td><td>该选项开启时，如果同页面有其他 aplayer 播放，该播放器会暂停</td></tr><tr><td>listmaxheight</td><td>340px</td><td>播放列表的最大长度</td></tr><tr><td>preload</td><td>auto</td><td>音乐文件预载入模式，可选项： <code>none</code>, <code>metadata</code>, <code>auto</code></td></tr><tr><td>theme</td><td>#ad7a86</td><td>播放器风格色彩设置</td></tr></tbody></table><p>说明：找到一个歌单或单曲的链接。这里用网易云举例</p><p><img src="https://s2.loli.net/2022/11/03/UHvP1s7f453NwVQ.png" alt="网易云网页端界面"></p><p>其中type是playlist，id是后面那串数字，复制粘贴就行，server是netease。不同厂家netease不同。例如：netease, tencent, kugou, xiami, baidu</p><h3 id="全局吸底"><a href="#全局吸底" class="headerlink" title="全局吸底"></a>全局吸底</h3><p>至此，网页中的音乐已经建立好了，但是我还想让它全局吸底在左下角（就像下图）</p><p><img src="https://s2.loli.net/2022/11/03/VhTuyC4WJNFfbEk.jpg" alt="就像这样"></p><p>这里以 Butterfly 主题为例，参考文章：<a href="https://butterfly.js.org/posts/507c070f/">https://butterfly.js.org/posts/507c070f/</a></p><p>由于需要全局都插入 aplayer 和 meting 资源，为了防止插入重复的资源，需要把 asset_inject 设为 false</p><p>在 Hexo 的配置文件中：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">  meting: true</span><br><span class="line">  asset_inject: false</span><br></pre></td></tr></table></figure><h4 id="开启主题的-AplayerInject"><a href="#开启主题的-AplayerInject" class="headerlink" title="开启主题的 AplayerInject"></a>开启主题的 AplayerInject</h4><p>在主题的配置文件中，<code>enable</code> 设为 <code>true</code> 和 <code>per_page</code> 设为 <code>true</code>：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">PLAINTEXT</span><br><span class="line"># Inject the css and script (aplayer/meting)</span><br><span class="line">aplayerInject:</span><br><span class="line">  enable: true</span><br><span class="line">  per_page: true</span><br></pre></td></tr></table></figure><h4 id="把-Aplayer-代码插入到主题配置文件"><a href="#把-Aplayer-代码插入到主题配置文件" class="headerlink" title="把 Aplayer 代码插入到主题配置文件"></a>把 Aplayer 代码插入到主题配置文件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">  bottom:</span><br><span class="line">    - &lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;7714811335&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-fixed=&quot;true&quot; data-autoplay=&quot;true&quot;&gt; &lt;/div&gt;</span><br></pre></td></tr></table></figure><p>重新运行Hexo就能看到网页左下角的Aplayer。</p><p>如果想切换页面是，音乐不会中断。就把主题配置文件中的<code>pjax</code>设为<code>true</code></p><h2 id="生成文章唯一链接"><a href="#生成文章唯一链接" class="headerlink" title="生成文章唯一链接"></a>生成文章唯一链接</h2><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>在博客根目录（以下简称[Blogroot]）打开终端，运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure><h3 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h3><p>插件安装成功后，在 [Blogroot] 的配置文件 _config.yml 找到 permalink：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">#修改为</span><br><span class="line">permalink: post/:abbrlink.html # post为自定义前缀</span><br><span class="line">abbrlink:</span><br><span class="line">    alg: crc32   #算法： crc16(default) and crc32</span><br><span class="line">    rep: hex     #进制： dec(default) and hex</span><br></pre></td></tr></table></figure><h2 id="修改横幅图片"><a href="#修改横幅图片" class="headerlink" title="修改横幅图片"></a>修改横幅图片</h2><table><thead><tr><th>配置</th><th>解释</th></tr></thead><tbody><tr><td>index_img</td><td>主页的 top_img</td></tr><tr><td>default_top_img</td><td>默认的 top_img，当页面的 top_img 没有配置时，会显示 default_top_img</td></tr><tr><td>archive_img</td><td>归档页面的 top_img</td></tr><tr><td>tag_img</td><td>tag 子页面 的 默认 top_img</td></tr><tr><td>tag_per_img</td><td>tag 子页面的 top_img，可配置每个 tag 的 top_img</td></tr><tr><td>category_img</td><td>category 子页面 的 默认 top_img</td></tr><tr><td>category_per_img</td><td>category 子页面的 top_img，可配置每个 category 的 top_img</td></tr></tbody></table><p>修改主题配置文件 <code>_config.butterfly.yml</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">index_img: xxx.png</span><br></pre></td></tr></table></figure><p>并不推荐为每个 tag 和每个 category 都配置不同的顶部图，因为配置太多会拖慢生成速度</p><h3 id="footer背景"><a href="#footer背景" class="headerlink" title="footer背景"></a>footer背景</h3><p>修改主题配置文件 <code>_config.butterfly.yml</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># footer是否显示图片背景(与 top_img一致)</span><br><span class="line">footer_bg: true</span><br></pre></td></tr></table></figure><h3 id="网站副标题"><a href="#网站副标题" class="headerlink" title="网站副标题"></a>网站副标题</h3><p>可设置主页中展示的网站副标题或者自己喜欢的座右铭</p><p>修改主题配置文件 <code>_config.butterfly.yml</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">subtitle:</span><br><span class="line">  enable: true</span><br><span class="line">  # Typewriter Effect (打字效果)</span><br><span class="line">  effect: true</span><br><span class="line">  # loop (循環打字)</span><br><span class="line">  loop: true</span><br><span class="line">  # source 調用第三方服務</span><br><span class="line">  # source: false 關閉調用</span><br><span class="line">  # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/</span><br><span class="line">  # source: 2  調用一句網（簡體） http://yijuzhan.com/</span><br><span class="line">  # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/</span><br><span class="line">  # subtitle 會先顯示 source , 再顯示 sub 的內容</span><br><span class="line">  # source: 3</span><br><span class="line">  # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字</span><br><span class="line">  sub:</span><br><span class="line">    - 怕什么真理无穷，进一寸有一寸的欢喜。</span><br></pre></td></tr></table></figure><h2 id="修改背景透明度"><a href="#修改背景透明度" class="headerlink" title="修改背景透明度"></a>修改背景透明度</h2><h4 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h4><p>采用外部导入CSS文件，不影响内部配置。</p><h4 id="正式食用"><a href="#正式食用" class="headerlink" title="正式食用"></a>正式食用</h4><p>1，在[root]\themes\butterfly\source\css下，创建CSS文件</p><p>2，引入</p><p><code>inject</code>在<code>\source\_data</code>的<code>butterfly.yml</code>中：</p><p>（如果没有，可以创建一个_data文件夹，将<code>\themes\butterfly</code>中的<code>_config.yml</code>复制过去，重命名为<code>butterfly.yml</code>）</p><p>在<code>inject</code>处，按以下方式引入<code>css文件</code>。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/mycss.css&quot;&gt;</span><br></pre></td></tr></table></figure><h4 id="修改透明度"><a href="#修改透明度" class="headerlink" title="修改透明度"></a>修改透明度</h4><p>将一下代码复制到你创建的<code>css文件</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">/* 文章页背景 */</span><br><span class="line">.layout_post&gt;#post &#123;</span><br><span class="line">    /* 以下代表透明度为0.5 可以自行修改 0为全透明*/</span><br><span class="line">    background: rgba(255,255,255,.5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 所有页面背景 */</span><br><span class="line">#aside_content .card-widget, #recent-posts&gt;.recent-post-item, .layout_page&gt;div:first-child:not(.recent-posts), .layout_post&gt;#page, .layout_post&gt;#post, .read-mode .layout_post&gt;#post&#123;</span><br><span class="line">    /* 以下代表透明度为0.5 */</span><br><span class="line">    background: rgba(255,255,255,.5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;魔改要加速了&quot;&gt;&lt;a href=&quot;#魔改要加速了&quot; class=&quot;headerlink&quot; title=&quot;魔改要加速了&quot;&gt;&lt;/a&gt;魔改要加速了&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;给音乐界面添加Aplayer&quot;&gt;&lt;a href=&quot;#给音乐界面添加Aplayer&quot; cl</summary>
+      
+    
+    
+    
+    <category term="Hexo的搭建之旅" scheme="http://example.com/categories/Hexo%E7%9A%84%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo搭建网页：从入门到入土</title>
+    <link href="http://example.com/post/19686.html"/>
+    <id>http://example.com/post/19686.html</id>
+    <published>2022-10-31T14:56:18.000Z</published>
+    <updated>2023-03-13T14:57:42.284Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title=" 前言"></a><span style='font-size:30px'> <strong>前言</strong></span></h1><p>这是个极其曲折的过程，采用Hexo和Github 搭建网页确实很容易，butterfly主题的应用网上也能查到很多相关资料。</p><p>   但是作为一个零基础的小白，后续的维护与插件的更新属实是让我头皮发麻。我写这个小站的初衷也是为了当个个人日记，记录下自己的学习过程，成长经历。同时也是记录下自己的操作，防止日后脑溢血……</p><p>路漫漫其修远兮，，，<img src="https://s2.loli.net/2022/10/31/qh7yOMKrjHlSkZC.jpg" alt="3ceaca8f86157859.jpg" style="zoom:25%;" /></p><hr><h1 id="Hexo-GitHub的优缺点"><a href="#Hexo-GitHub的优缺点" class="headerlink" title=" Hexo+GitHub的优缺点"></a><span style='font-size:30px'> <strong>Hexo+GitHub的优缺点</strong></span></h1><p>用GitHub Pages来搭建有很多优点</p><ul><li><p>首先就是我最吸引我的，零成本，不用购买服务器和域名（域名的事以后再说），一切工作都能在Git Hub上完成。</p></li><li><p>不用维护，而且很稳定，搭建几年后再看，文章可能还在。</p></li><li><p>官方有很多现成框架可以直接使用。</p></li><li><p>Git Hub上大佬真的多，各种资源直接调用。</p></li></ul><p>但是也有很多缺点（很头疼）</p><ul><li><p>搭建过程复杂，需要搭建环境，容易出错。</p></li><li><p>国内访问会稍慢，不过可以设置通过国内服务器访问（暂时不会）。</p></li><li><p>静态网页，需要每次手动上传。</p></li></ul><p>主题采用的是Butterfly。<a href= "https://butterfly.js.org/posts/21cfbf15/" >详见butterfly的搭建与美化教程</a></p><hr><h1 id="常用命令"><a href="#常用命令" class="headerlink" title=" 常用命令"></a><span style='font-size:30px'> <strong>常用命令</strong></span></h1><p>代码编辑使用的是Pycharm，网页文件使用的是Typora。</p>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d      # 部署</span><br><span class="line">hexo g -d   # 生成页面并部署</span><br><span class="line">hexo help   # 帮助</span><br></pre></td></tr></table></figure>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;name&quot;      # 新建文章</span><br><span class="line"></span><br><span class="line">hexo new page &quot;name&quot; # 新建页面</span><br></pre></td></tr></table></figure><hr><h1 id="后记"><a href="#后记" class="headerlink" title=" 后记"></a><span style='font-size:30px'> <strong>后记</strong></span></h1><p>这是我第三遍尝试搭建自己的页面。第一个当实验，什么都不懂。第二个没有正确配置，并且没有备份，导致BUG成堆，直接崩溃。</p><p>第三个打算记录下自己的操作，方便日后找BUG。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot; 前言&quot;&gt;&lt;/a&gt;&lt;span style=&#39;font-size:30px&#39;&gt; &lt;strong&gt;前言&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;这是个极其曲折的过程，采用He</summary>
+      
+    
+    
+    
+    <category term="Hexo的搭建之旅" scheme="http://example.com/categories/Hexo%E7%9A%84%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
