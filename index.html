@@ -48,7 +48,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-03-15 13:40:03'
+  postUpdate: '2023-03-15 17:57:48'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -164,11 +164,15 @@ hexo上传至Github安装包安装node.js
 
 再次不再过多赘述，可以查看hexo的文档：文档 | Hexo
 
-新建Github仓库1，创建并登录自己的Github，新建个仓库，命名为username.github.iousername为你自己的用户名，勾选Initialiaze this repository with a README
-2,然后就可以访问自己的username.github.io，网站为https://github.com/username.github.io
+新建Github仓库创建并登录自己的Github，新建个仓库，命名为username.github.io，username为你自己的用户名（一定要相同），勾选Initialiaze this repository with a README和Public
+
+
 修改配置1，在你的电脑中的BLOG根文件夹中找到：**_config.yml**
 2，将最后的deploy改为
-12345deploy:  type: git  repository:    github: https://github.com/yourname/yournam ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/6a7616d7.html" title="膜电极的研究（1）"><img class="post_bg" src="https://s2.loli.net/2023/03/14/sSP2bRnqvIwKAJc.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="膜电极的研究（1）"></a></div><div class="recent-post-info"><a class="article-title" href="/post/6a7616d7.html" title="膜电极的研究（1）">膜电极的研究（1）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-13T14:56:32.000Z" title="发表于 2023-03-13 22:56:32">2023-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A4%A7%E5%AD%A6%E5%A4%A7%E4%B8%8D%E4%BA%86%E8%87%AA%E5%AD%A6/">大学大不了自学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E5%A4%A7%E5%AD%A6%E5%A4%A7%E4%B8%8D%E4%BA%86%E8%87%AA%E5%AD%A6/PEMFC/">PEMFC</a></span></div><div class="content">摘要膜电极（MEA）是PEMFC的核心部分，其直接绝定了PEMFC性能的好坏。
+12345deploy:  type: git  repository:    github: https://github.com/yourname/yourname.github.io.git  branch: master
+
+运行下面代码，安装deploy插件
+1npm i ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/6a7616d7.html" title="膜电极的研究（1）"><img class="post_bg" src="https://s2.loli.net/2023/03/14/sSP2bRnqvIwKAJc.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="膜电极的研究（1）"></a></div><div class="recent-post-info"><a class="article-title" href="/post/6a7616d7.html" title="膜电极的研究（1）">膜电极的研究（1）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-03-13T14:56:32.000Z" title="发表于 2023-03-13 22:56:32">2023-03-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A4%A7%E5%AD%A6%E5%A4%A7%E4%B8%8D%E4%BA%86%E8%87%AA%E5%AD%A6/">大学大不了自学</a><i class="fas fa-angle-right article-meta-link"></i><a class="article-meta__categories" href="/categories/%E5%A4%A7%E5%AD%A6%E5%A4%A7%E4%B8%8D%E4%BA%86%E8%87%AA%E5%AD%A6/PEMFC/">PEMFC</a></span></div><div class="content">摘要膜电极（MEA）是PEMFC的核心部分，其直接绝定了PEMFC性能的好坏。
 MEA主要包括质子交换膜（PEM）、阴极催化层（CaCL）、阳极催化层（AnCL）、阴极气体扩散层（CaGDL)和阳极气体扩散层（AnGDL）。有时又将气体扩散层成为“碳纸”和”微孔层“。
 阴极面临的困难和挑战：1、阴极水管理问题，阴极容易发生水淹现象，水淹会导致阴极催化剂活性降低、堵塞气体扩散孔道。2、氧气还原比较困难，催化剂的利用率比较低。
 第一章 绪论1.1 燃料电池简介根据燃料电池的电解质不通过进行分类，可将燃料电池分为：碱性燃料电池（AFC）。磷酸盐型燃料电池（PAFC），熔融碳酸盐型燃料电池（MCFC），固体氧化物型燃料电池。（SOFC）和质子交换膜燃料电池（PEMFC）。
