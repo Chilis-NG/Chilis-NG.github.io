@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>网站访问</title>
+      <link href="/post/f7c24785.html"/>
+      <url>/post/f7c24785.html</url>
+      
+        <content type="html"><![CDATA[<h1>1.2 网站的几种访问方式</h1><h2 id="1-2-1-客户端GET方式发送数据">1.2.1 客户端GET方式发送数据</h2><p>GET发送的数据应附在URL后面，格式为：</p><p><code>“url”?键1=值1&amp;键2=值2&amp;键3=值3......</code></p><p>例如向服务器传递省份与城市的数据：</p><p><code>urllib.request.urlopen(&quot;http://127.0.0.1:5000?province=GD&amp;city=SZ&quot;)</code></p><p>如果参数含有汉字，则需要使用<code>urllib.parse.quote</code>函数进行编码，例如：<a href="http://client.py">client.py</a></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">province= urllib.parse.qoute(&quot;广东&quot;) </span><br><span class="line"></span><br><span class="line">city= urllib.parse.qoute(&quot;深圳&quot;)</span><br></pre></td></tr></table></figure><p>则，一个完整的客户端可以是：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.parse</span><br><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line"></span><br><span class="line">url=<span class="string">&quot;http://127.0.0.1:5000&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">province = urllib.parse.quote(<span class="string">&quot;广东&quot;</span>)</span><br><span class="line">city = urllib.parse.quote(<span class="string">&quot;深圳&quot;</span>)</span><br><span class="line">data = <span class="string">&quot;province=&quot;</span>+province+<span class="string">&quot;&amp;city=&quot;</span>+city        <span class="comment"># 即是 键=值</span></span><br><span class="line">html = urllib.request.urlopen(<span class="string">&quot;http://127.0.0.1:5000?&quot;</span>+data)</span><br><span class="line">html = html.read()</span><br><span class="line">html = html.decode()</span><br><span class="line"><span class="built_in">print</span>(html)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> err:</span><br><span class="line"><span class="built_in">print</span>(err)</span><br></pre></td></tr></table></figure><h2 id="1-2-2-服务器获取GET发送的数据">1.2.2 服务器获取GET发送的数据</h2><p>服务器用Flask中的<code>request.args</code>来储存GET参数。用GET来获取参数，即是用 <code>flask.request.args.get(参数)</code>来获取参数的值。如：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">province=flask.request.args.get(<span class="string">&quot;province&quot;</span>) </span><br><span class="line">city=flask.request.args.get(<span class="string">&quot;city&quot;</span>)</span><br></pre></td></tr></table></figure><p>可以这样编写服务器程序：<a href="http://sever.py">sever.py</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> flask     <span class="comment"># 引入Flask程序</span></span><br><span class="line">app=flask.Flask(__name__)    <span class="comment"># 初始化、命名程序</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&quot;/&quot;</span></span>)    </span><span class="comment"># 指明路由</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">index</span>():</span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">province=flask.request.args.get(<span class="string">&quot;province&quot;</span>)</span><br><span class="line">city = flask.request.args.get(<span class="string">&quot;city&quot;</span>)</span><br><span class="line"><span class="keyword">return</span> province+<span class="string">&quot;,&quot;</span>+city</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> err:</span><br><span class="line"><span class="keyword">return</span> <span class="built_in">str</span>(err)</span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">app.run()</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python_Study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>静电喷涂操作规范</title>
       <link href="/post/f1a6d443.html"/>
       <url>/post/f1a6d443.html</url>
