@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-21T14:15:56.441Z</updated>
+  <updated>2023-03-21T07:25:35.973Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,37 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>单词学习</title>
-    <link href="http://example.com/post/c0528de9.html"/>
-    <id>http://example.com/post/c0528de9.html</id>
-    <published>2023-03-21T12:27:26.000Z</published>
-    <updated>2023-03-21T14:15:56.441Z</updated>
-    
-    <content type="html"><![CDATA[<hr><p>3/21</p><ul><li><strong>perplex</strong>  *v.*使困惑，使茫然；使复杂化</li></ul><p> <strong>puzzle</strong>  *v.*使困惑，使迷惑；（因迷惑而）苦思，冥思苦想    *n.*智力游戏；拼图游戏；令人费解的人（或事物），难题</p><ul><li><strong>exploit</strong>  *v.*剥削，压榨；运用，发挥；开发，开拓    *n.*壮举；不凡的身手</li></ul><p> <strong>explore</strong>  *v.*探究；考察，探索；仔细检查</p><p> <strong>explode</strong>  <em>v.</em>（使）爆炸；激增；（情感）爆发；推翻，破除；爆响；迅速移动</p><p> <strong>explain</strong>  *v.*解释，说明；说明原因</p><ul><li><strong>pillar</strong>  *n.*柱子，支柱；栋梁；（组织、制度、信仰等的）基础；柱状物；纪念柱；矿柱    *v.*用柱支撑</li></ul><p> <strong>pill</strong>  *n.*药片，药丸    <em>v.</em>（衣服或布料）结绒；把……制成丸剂；</p><p> <strong>pillow</strong>  *n.*枕头</p><ul><li><strong>rotate</strong>  <em>v.</em>（使）旋转，（使）转动；（人员）轮换，轮值；轮种，轮作；定期调换地点（或位置）</li></ul><p> <strong>revolve</strong>  <em>v.</em>（使）旋转；围绕……旋转</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;hr&gt;
-&lt;p&gt;3/21&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;perplex&lt;/strong&gt;  *v.*使困惑，使茫然；使复杂化&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt; &lt;strong&gt;puzzle&lt;/strong&gt;  *v.*使困惑，使迷惑；（因迷惑而）苦思，冥思苦想    *n</summary>
-      
-    
-    
-    
-    <category term="English_Study" scheme="http://example.com/categories/English-Study/"/>
-    
-    
-    <category term="CET6" scheme="http://example.com/tags/CET6/"/>
-    
-    <category term="单词" scheme="http://example.com/tags/%E5%8D%95%E8%AF%8D/"/>
-    
-  </entry>
   
   <entry>
     <title>flask搭建</title>
