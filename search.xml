@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>flask搭建</title>
+      <link href="/post/d5fd331f.html"/>
+      <url>/post/d5fd331f.html</url>
+      
+        <content type="html"><![CDATA[<p>考虑到笔者最为熟悉的是Python，因此打算逐步转移至为Python为底层逻辑的将框架中。</p><p>文档：<a href="https://flask.net.cn/">https://flask.net.cn/</a></p><h1>快速搭建</h1><p>使用最新版本的Python3。</p><h2 id="创建虚拟环境">创建虚拟环境</h2><p>虚拟环境可以为每一个项目安装独立的Python库。Python3内置用于创建虚拟环境的<code>venv</code>模块。</p><p>先新建一个项目文件夹，在文件夹中运行：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir myproject   # 新建一个名为myproject的文件夹，作为环境文件</span><br><span class="line">cd myproject   # 定位在这个文件夹中</span><br><span class="line">python3 -m venv venv</span><br></pre></td></tr></table></figure><p>接着运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py -3 -m venv venv</span><br></pre></td></tr></table></figure><p>环境创建完成后，激活它</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">venv\Scripts\activate</span><br></pre></td></tr></table></figure><p>完成</p><h2 id="安装Flask">安装Flask</h2><p>在激活的虚拟环境中可以使用如下命令安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install Flask</span><br></pre></td></tr></table></figure><p>更新Flask命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U https://github.com/pallets/flask/archive/master.tar.gz</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Flask的搭建之旅 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Flask </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>网站访问</title>
       <link href="/post/f7c24785.html"/>
       <url>/post/f7c24785.html</url>

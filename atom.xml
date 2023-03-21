@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-20T07:17:11.991Z</updated>
+  <updated>2023-03-21T07:25:10.559Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>flask搭建</title>
+    <link href="http://example.com/post/d5fd331f.html"/>
+    <id>http://example.com/post/d5fd331f.html</id>
+    <published>2023-03-21T06:59:55.000Z</published>
+    <updated>2023-03-21T07:25:10.559Z</updated>
+    
+    <content type="html"><![CDATA[<p>考虑到笔者最为熟悉的是Python，因此打算逐步转移至为Python为底层逻辑的将框架中。</p><p>文档：<a href="https://flask.net.cn/">https://flask.net.cn/</a></p><h1>快速搭建</h1><p>使用最新版本的Python3。</p><h2 id="创建虚拟环境">创建虚拟环境</h2><p>虚拟环境可以为每一个项目安装独立的Python库。Python3内置用于创建虚拟环境的<code>venv</code>模块。</p><p>先新建一个项目文件夹，在文件夹中运行：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir myproject   # 新建一个名为myproject的文件夹，作为环境文件</span><br><span class="line">cd myproject   # 定位在这个文件夹中</span><br><span class="line">python3 -m venv venv</span><br></pre></td></tr></table></figure><p>接着运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py -3 -m venv venv</span><br></pre></td></tr></table></figure><p>环境创建完成后，激活它</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">venv\Scripts\activate</span><br></pre></td></tr></table></figure><p>完成</p><h2 id="安装Flask">安装Flask</h2><p>在激活的虚拟环境中可以使用如下命令安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install Flask</span><br></pre></td></tr></table></figure><p>更新Flask命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U https://github.com/pallets/flask/archive/master.tar.gz</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;考虑到笔者最为熟悉的是Python，因此打算逐步转移至为Python为底层逻辑的将框架中。&lt;/p&gt;
+&lt;p&gt;文档：&lt;a href=&quot;https://flask.net.cn/&quot;&gt;https://flask.net.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;快速搭建&lt;/h1&gt;
+&lt;p&gt;使用</summary>
+      
+    
+    
+    
+    <category term="Flask的搭建之旅" scheme="http://example.com/categories/Flask%E7%9A%84%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85/"/>
+    
+    
+    <category term="Flask" scheme="http://example.com/tags/Flask/"/>
+    
+  </entry>
+  
+  <entry>
     <title>网站访问</title>
     <link href="http://example.com/post/f7c24785.html"/>
     <id>http://example.com/post/f7c24785.html</id>
     <published>2023-03-20T06:48:13.000Z</published>
-    <updated>2023-03-20T07:17:11.991Z</updated>
+    <updated>2023-03-20T07:27:45.281Z</updated>
     
     <content type="html"><![CDATA[<h1>1.2 网站的几种访问方式</h1><h2 id="1-2-1-客户端GET方式发送数据">1.2.1 客户端GET方式发送数据</h2><p>GET发送的数据应附在URL后面，格式为：</p><p><code>“url”?键1=值1&amp;键2=值2&amp;键3=值3......</code></p><p>例如向服务器传递省份与城市的数据：</p><p><code>urllib.request.urlopen(&quot;http://127.0.0.1:5000?province=GD&amp;city=SZ&quot;)</code></p><p>如果参数含有汉字，则需要使用<code>urllib.parse.quote</code>函数进行编码，例如：<a href="http://client.py">client.py</a></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">province= urllib.parse.qoute(&quot;广东&quot;) </span><br><span class="line"></span><br><span class="line">city= urllib.parse.qoute(&quot;深圳&quot;)</span><br></pre></td></tr></table></figure><p>则，一个完整的客户端可以是：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.parse</span><br><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line"></span><br><span class="line">url=<span class="string">&quot;http://127.0.0.1:5000&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">province = urllib.parse.quote(<span class="string">&quot;广东&quot;</span>)</span><br><span class="line">city = urllib.parse.quote(<span class="string">&quot;深圳&quot;</span>)</span><br><span class="line">data = <span class="string">&quot;province=&quot;</span>+province+<span class="string">&quot;&amp;city=&quot;</span>+city        <span class="comment"># 即是 键=值</span></span><br><span class="line">html = urllib.request.urlopen(<span class="string">&quot;http://127.0.0.1:5000?&quot;</span>+data)</span><br><span class="line">html = html.read()</span><br><span class="line">html = html.decode()</span><br><span class="line"><span class="built_in">print</span>(html)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> err:</span><br><span class="line"><span class="built_in">print</span>(err)</span><br></pre></td></tr></table></figure><h2 id="1-2-2-服务器获取GET发送的数据">1.2.2 服务器获取GET发送的数据</h2><p>服务器用Flask中的<code>request.args</code>来储存GET参数。用GET来获取参数，即是用 <code>flask.request.args.get(参数)</code>来获取参数的值。如：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">province=flask.request.args.get(<span class="string">&quot;province&quot;</span>) </span><br><span class="line">city=flask.request.args.get(<span class="string">&quot;city&quot;</span>)</span><br></pre></td></tr></table></figure><p>可以这样编写服务器程序：<a href="http://sever.py">sever.py</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> flask     <span class="comment"># 引入Flask程序</span></span><br><span class="line">app=flask.Flask(__name__)    <span class="comment"># 初始化、命名程序</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&quot;/&quot;</span></span>)    </span><span class="comment"># 指明路由</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">index</span>():</span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">province=flask.request.args.get(<span class="string">&quot;province&quot;</span>)</span><br><span class="line">city = flask.request.args.get(<span class="string">&quot;city&quot;</span>)</span><br><span class="line"><span class="keyword">return</span> province+<span class="string">&quot;,&quot;</span>+city</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> err:</span><br><span class="line"><span class="keyword">return</span> <span class="built_in">str</span>(err)</span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">app.run()</span><br></pre></td></tr></table></figure>]]></content>
     
