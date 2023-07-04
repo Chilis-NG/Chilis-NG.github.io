@@ -175,31 +175,6 @@
   </entry>
   
   <entry>
-    <title>科学研究与论文写作</title>
-    <link href="http://example.com/post/2db5a85a.html"/>
-    <id>http://example.com/post/2db5a85a.html</id>
-    <published>2023-03-22T10:42:10.000Z</published>
-    <updated>2023-03-23T10:57:37.804Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="检索式构建"><a href="#检索式构建" class="headerlink" title="检索式构建"></a>检索式构建</h1><p>拿到一个专业名称后，百度一下，搜索了解它的学术表达方式。参考网站：</p><p><a href="https://dict.cnkint.net/index%E3%80%82">https://dict.cnkint.net/index。</a></p><p> [Web of Science](<a href="https://www.webofscience.com/wos/alldb/basic-search">文献检索 - 所有数据库 (webofscience.com)</a>)(建议合计选择前两个：核心合集和中国科学引文)</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;检索式构建&quot;&gt;&lt;a href=&quot;#检索式构建&quot; class=&quot;headerlink&quot; title=&quot;检索式构建&quot;&gt;&lt;/a&gt;检索式构建&lt;/h1&gt;&lt;p&gt;拿到一个专业名称后，百度一下，搜索了解它的学术表达方式。参考网站：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://</summary>
-      
-    
-    
-    
-    <category term="科学研究方法" scheme="http://example.com/categories/%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95/"/>
-    
-    
-    <category term="研究方法与论文" scheme="http://example.com/tags/%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95%E4%B8%8E%E8%AE%BA%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
     <title>flask搭建</title>
     <link href="http://example.com/post/d5fd331f.html"/>
     <id>http://example.com/post/d5fd331f.html</id>
