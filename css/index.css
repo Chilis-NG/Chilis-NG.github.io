@@ -6040,3 +6040,163 @@ blockquote.pullquote.right {
     max-height: 75vh !important;
   }
 }
+:root {
+  --heo-white: #fff;
+  --heo-black: #000;
+  --heo-none: rgba(0,0,0,0);
+  --heo-gray: #999;
+  --heo-yellow: #ffc93e;
+  --heo-main: var(--heo-theme);
+  --heo-main-op: var(--heo-theme-op);
+  --heo-shadow-theme: 0 8px 12px -3px var(--heo-theme-op);
+  --heo-shadow-main: 0 8px 12px -3px var(--heo-main-op);
+  --heo-shadow-blue: 0 8px 12px -3px rgba(40,109,234,0.2);
+  --heo-shadow-white: 0 8px 12px -3px rgba(255,255,255,0.2);
+  --heo-shadow-black: 0 0 12px 4px rgba(0,0,0,0.05);
+  --heo-shadow-yellow: 0px 38px 77px -26px rgba(255,201,62,0.12);
+  --heo-shadow-red: 0 8px 12px -3px rgba(238,125,121,0.212);
+  --heo-shadow-green: 0 8px 12px -3px rgba(135,238,121,0.212);
+  --heo-logo-color: linear-gradient(215deg, #4584ff 30%, #ff7676 70%);
+  --style-border: 1px solid var(--heo-card-border);
+  --style-border-hover: 1px solid var(--heo-theme);
+}
+::selection {
+  background: var(--heo-fontcolor);
+  color: var(--heo-background);
+}
+[data-theme=light] {
+  --heo-theme: #425aef;
+  --heo-theme-op: rgba(66,89,239,0.137);
+  --heo-blue: #425aef;
+  --heo-red: #d8213c;
+  --heo-pink: #ff7c7c;
+  --heo-green: #57bd6a;
+  --heo-fontcolor: #363636;
+  --heo-background: #f7f9fe;
+  --heo-reverse: #000;
+  --heo-maskbg: rgba(255,255,255,0.6);
+  --heo-maskbgdeep: rgba(255,255,255,0.85);
+  --heo-hovertext: var(--heo-theme);
+  --heo-ahoverbg: #f7f7fa;
+  --heo-lighttext: var(--heo-main);
+  --heo-secondtext: rgba(60,60,67,0.6);
+  --heo-scrollbar: rgba(60,60,67,0.4);
+  --heo-card-btn-bg: #edf0f7;
+  --heo-post-blockquote-bg: #fafcff;
+  --heo-post-tabs-bg: #f2f5f8;
+  --heo-secondbg: #edf0f7;
+  --heo-shadow-nav: 0 5px 12px -5px rgba(102,68,68,0.05);
+  --heo-card-bg: #fff;
+  --heo-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
+  --heo-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+  --heo-card-border: #e3e8f7;
+}
+[data-theme=dark] {
+  --heo-theme: #0084ff;
+  --heo-theme-op: rgba(0,132,255,0.137);
+  --heo-blue: #0084ff;
+  --heo-red: #ff3842;
+  --heo-pink: #ff7c7c;
+  --heo-green: #57bd6a;
+  --heo-fontcolor: #f7f7fa;
+  --heo-background: #18171d;
+  --heo-reverse: #fff;
+  --heo-maskbg: rgba(0,0,0,0.6);
+  --heo-maskbgdeep: rgba(0,0,0,0.85);
+  --heo-hovertext: #0a84ff;
+  --heo-ahoverbg: #fff;
+  --heo-lighttext: #f2b94b;
+  --heo-secondtext: #a1a2b8;
+  --heo-scrollbar: rgba(200,200,223,0.4);
+  --heo-card-btn-bg: #30343f;
+  --heo-post-blockquote-bg: #000;
+  --heo-post-tabs-bg: #121212;
+  --heo-secondbg: #30343f;
+  --heo-shadow-nav: 0 5px 20px 0px rgba(28,28,28,0.4);
+  --heo-card-bg: #1d1b26;
+  --heo-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
+  --heo-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
+  --heo-card-border: #42444a;
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --style-border: 0px solid var(--heo-card-border);
+    --style-border-hover: 0px solid var(--heo-theme);
+  }
+}
+/* 首页分类条展示 */
+#category-bar {
+  padding: 0.4rem 1rem 0.4rem 0.5rem;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: var(--card-box-shadow);
+  box-shadow: var(--card-box-shadow);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+/* margin-bottom: 1rem; */
+  margin-top: 1rem;
+}
+@media screen and (max-width: 768px) {
+  #category-bar {
+    border-radius: 0;
+  }
+}
+#category #category-bar {
+  padding: 0;
+  border: none;
+}
+#category a.category-bar-item.select a {
+  display: none;
+}
+.category-in-bar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  white-space: nowrap;
+}
+.category-in-bar-tips {
+  margin-right: 1rem;
+}
+.category-bar-items {
+  white-space: nowrap;
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.category-bar-items::-webkit-scrollbar {
+  display: none;
+}
+.category-bar-item a {
+  padding: 0.1rem 1rem;
+  margin: 0 0.25rem;
+  font-weight: bold;
+  border-radius: 12px;
+  color: #363636;
+}
+.category-bar-item:hover a {
+  background: var(--heo-main);
+  color: var(--heo-white);
+}
+.category-bar-item.select a {
+  background: var(--heo-main);
+  color: var(--heo-white);
+  border-radius: 8px;
+}
+.category-bar-more {
+  margin-left: 1rem;
+  font-weight: bold;
+  color: #363636;
+}
