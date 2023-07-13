@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/post/cbd4ddb9.html</loc>
+    
+    <lastmod>2023-07-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/post/f7c24785.html</loc>
     
     <lastmod>2023-07-13</lastmod>
@@ -21,15 +30,6 @@
   
   <url>
     <loc>http://example.com/post/d5fd331f.html</loc>
-    
-    <lastmod>2023-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/post/cbd4ddb9.html</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -309,14 +309,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/GAMES/Minecraft/</loc>
+    <loc>http://example.com/categories/%E5%8E%9F%E7%90%86%E6%8E%A2%E6%9E%90/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E5%8E%9F%E7%90%86%E6%8E%A2%E6%9E%90/</loc>
+    <loc>http://example.com/categories/GAMES/Minecraft/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
