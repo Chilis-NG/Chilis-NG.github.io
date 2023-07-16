@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>My Gallery</title>
+      <link href="/post/undefined.html"/>
+      <url>/post/undefined.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>生活琐事</title>
+      <link href="/post/8af8cfb4.html"/>
+      <url>/post/8af8cfb4.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活札记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何做好文献汇报</title>
       <link href="/post/cbd4ddb9.html"/>
       <url>/post/cbd4ddb9.html</url>
@@ -339,31 +371,6 @@
         <tags>
             
             <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>虚幻4：从入门到入坟</title>
-      <link href="/post/19686.html"/>
-      <url>/post/19686.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 虚幻4：从入门到入坟 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 虚幻4 </tag>
             
         </tags>
       
